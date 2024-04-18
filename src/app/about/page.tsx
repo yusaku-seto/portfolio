@@ -1,5 +1,7 @@
+"use client";
 import Link from 'next/link';
 import profileData from '../../../public/json/profile.json';
+import FadeIn from '../../app/components/UI/FadeIn';
 export default function Profile() {
   const { name, biography, activities, skills } = profileData;
   return (
@@ -48,7 +50,11 @@ export default function Profile() {
         <div className="max-w-6xl mx-auto p-8">
           {/* <div className="w-full text-left mb-4"> */}
           <h2 className="flex font-semibold pt-32 pb-12">
-            <span className='text-blue-500 text-2xl w-80'>Skill</span>
+            <div className='w-80'>
+              <FadeIn>
+                <span className='text-blue-500 text-2xl'>Skill</span>
+              </FadeIn>
+            </div>
             <span className='text-3xl skill-h2-2'>データサイエンスに加えてフロントエンドの知識を備えます</span>
           </h2>
           <div className="flex flex-wrap justify-center">
