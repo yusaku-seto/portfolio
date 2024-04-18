@@ -16,6 +16,85 @@
   }
 }
 
+.body {
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+/* styles.module.css や global.css など、適切な CSS ファイルに追加 */
+
+
+
+/* styles.module.css や global.css など、適切な CSS ファイルに追加 */
+
+.scroll-section {
+  position: relative;
+  height: 100vh;
+  /* 画面の高さいっぱいに表示されるようにする例 */
+}
+
+.scroll-section-2 {
+  position: relative;
+  height: 100vh;
+  /* 画面の高さいっぱいに表示されるようにする例 */
+  background: rgba(215, 228, 228, 0.45);
+  border-radius: 26px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* height: auto; */
+  background-image: url('/img/background.png');
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  /* ぼかしの大きさは必要に応じて調整 */
+  z-index: -1;
+  /* 最背面に配置 */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* 背景画像の上に配置 */
+  padding: 20px;
+  color: #fff;
+  /* コンテンツの色を設定 */
+}
+
+.background-skill {
+  background: rgba(215, 228, 228, 0.45);
+}
+
+.skill-h2-2 {
+  width: 500px
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: block;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

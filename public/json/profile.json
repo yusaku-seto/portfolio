@@ -39,7 +39,25 @@
             "activity": "東京農工大学工学部 卒業"
         }
     ],
-    "skills": {
+    "skills": [
+        {
+            "skill": "データ分析",
+            "detail": "pythonを用いてデータ分析可視化"
+        },
+        {
+            "skill": "機械学習",
+            "detail": "教師あり機械学習やクラスタリングを行います。"
+        },
+        {
+            "skill": "DB処理＆API",
+            "detail": "リレーショナルDBを用いて大規模データを扱います。Djangoを使用してpython処理を含むAPiのエンドポイントを構築します。"
+        },
+        {
+            "skill": "WEBアプリ開発",
+            "detail": "NEXT.jsを用いたフロントエンド開発を行います"
+        }
+    ],
+    "skills-test": {
         "python": "python書けまーーす",
         "english": "TOEIC Listening & Reading Test 820点取りましたーーーー！！",
         "frontend": "NEXT.js REACTもかじってるよ😀"
