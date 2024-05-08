@@ -1,10 +1,10 @@
 "use client";
+import Image from 'next/image';
 import Link from 'next/link';
 import profileData from '../../../public/json/profile.json';
-import FadeIn from '../../app/components/UI/FadeIn';
 import Header from '../../app/components/base/Header';
 export default function Profile() {
-  const { name, biography, activities, skills } = profileData;
+  const { name, biography, activities, skills, travelGalleryPaths } = profileData;
   return (
     <div className='body'>
       <Header></Header>
@@ -46,31 +46,7 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* Skill */}
-      <div className="scroll-section">
-        <div className="background-image"></div>
-        <div className="max-w-6xl mx-auto p-8">
-          {/* <div className="w-full text-left mb-4"> */}
-          <h2 className="md:gap-0 md:flex font-semibold pt-32 pb-12">
-            <div className='mb-10 md:mb-0 md: w-40 lg:w-80'>
-              <FadeIn>
-                <span className='text-blue-500 text-2xl'>Skill</span>
-              </FadeIn>
-            </div>
-            <span className='text-3xl skill-h2-2'>データサイエンスの力で、安全・快適で持続可能な社会の実現に貢献します</span>
-          </h2>
-          <div className="flex flex-wrap justify-center">
-            <ul className="flex flex-col gap-10 md:ml-40 lg:ml-80">
-              {skills.map((skill, index) => (
-                <li key={index} className="sm:w-full">
-                  <dt className="pr-4 text-2xl text-blue-500 font-bold mb-3">{skill.skill}</dt>
-                  <dd className="text-lg">{skill.detail}</dd>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+
 
       {/* Skill */}
       <div className="scroll-section-2">
@@ -85,7 +61,7 @@ export default function Profile() {
             <div className="flex flex-wrap justify-center">
               {/* Left Side */}
               <div className="w-full sm:w-1/2 p-4">
-                <img src="/img/gallery/baseball.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
+                <img src="/img/ehime.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
               </div>
 
               {/* Right Side */}
@@ -111,34 +87,33 @@ export default function Profile() {
             <div className="flex flex-wrap justify-center">
               {/* Left Side */}
               <div className="w-full sm:w-1/2 p-4">
-                <div className="text-left">
-                  {skills.english}
+                <div className="scroll-infinity">
+                  <div className="scroll-infinity__wrap">
+                    <ul className="scroll-infinity__list scroll-infinity__list--right">
+                      {travelGalleryPaths.map((travelGalleryPath, index) => (
+
+                        <li key={index} className="scroll-infinity__item"><Image src={travelGalleryPath.path} width={300} height={500} alt="img" /></li>
+                      ))}
+                    </ul>
+                    <ul className="scroll-infinity__list scroll-infinity__list--right">
+                      {travelGalleryPaths.map((travelGalleryPath, index) => (
+
+                        <li key={index} className="scroll-infinity__item"><img src={travelGalleryPath.path} /></li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
                 <Link href={"https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRavpo91x8eARGGuWro41Qv5gTdYq1eRJw"}>TOEIC820点：証明書</Link>
               </div>
 
               {/* Right Side */}
               <div className="w-full sm:w-1/2 p-4">
-                <img src="/img/dazaihu.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
+                <Image src="/img/dazaihu.png" width={1280} height={852} alt="Profile" className="block w-50 h-50 rounded-lg" />
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <div className="flex flex-wrap justify-center">
-            {/* Left Side */}
-            <div className="w-full sm:w-1/2 p-4">
-              <img src="/img/baystars25.jpg" alt="Profile" className="block w-50 h-50 rounded-lg" />
-            </div>
 
-            {/* Right Side */}
-            <div className="w-full sm:w-1/2 p-4">
-              <div className="text-left">
-                {skills.frontend}
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

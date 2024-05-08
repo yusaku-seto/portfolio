@@ -20,9 +20,90 @@
   font-family: sans-serif, Arial, Helvetica;
 }
 
-/* styles.module.css や global.css など、適切な CSS ファイルに追加 */
+/* header */
+.header {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.header_logo {
+  color: blue;
+  min-width: 80px;
+}
+
+.header_list {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header_list_item {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header_item_link {
+  color: #333;
+  text-shadow: 0 0 10px #ffffff;
+  display: flex;
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 10px 0px;
+}
+
+.header_item_link:hover {
+  filter: opacity(0.6);
+}
+
+.menu_toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.toggle_line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+}
+
+@media (max-width: 500px) {
+  .header_list {
+    display: none;
+  }
+
+  .menu_toggle {
+    display: flex;
+  }
 
 
+  .header_list.menu_open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(100, 246, 255, 0.9);
+    /* opacity: 0.9; */
+    padding: 20px;
+    box-sizing: border-box;
+    animation-name: fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
 
 /* styles.module.css や global.css など、適切な CSS ファイルに追加 */
 
@@ -94,6 +175,152 @@
     transform: translateY(0);
   }
 }
+
+/* その場で */
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* カルーセルUI */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-area {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.carousel-list {
+  flex: 0 0 auto;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  /* 水平方向の中央揃え */
+  align-items: center;
+  /* 垂直方向の中央揃え */
+  animation: anime 5s infinite;
+  /* アニメーションの適用 */
+  /* 透明度の変化を滑らかにする */
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.carousel-list.active {
+  display: flex;
+  /* animation: none; */
+  /* アクティブなスライドはアニメーションしない */
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #ccc;
+}
+
+.btn-back,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-back {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
+/* カルーセルUIここまで */
+
+
+/* 画像自動横スクロール */
+@keyframes infinity-scroll-right {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0
+}
+
+.scroll-infinity__list--right {
+  animation: infinity-scroll-right 40s infinite linear 0.5s both;
+}
+
+.scroll-infinity__item {
+  margin-right: 30px;
+  width: calc(100vw / 6);
+}
+
+.scroll-infinity__item>img {
+  width: 100%;
+}
+
 
 /* body {
   color: rgb(var(--foreground-rgb));

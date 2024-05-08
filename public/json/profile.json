@@ -1,6 +1,6 @@
 {
     "name": "瀬戸優作|Seto Yusaku",
-    "biography": "2002.08.08生まれ、東京都立川市出身。東京農工大学在学中。",
+    "biography": "2002.08.08生まれ、東京都立川市出身。東京農工大学スマートモビリティ研究拠点・ポンサトーン研究室所属。国際的研究拠点に身を置き、ヒヤリハットデータベース構築と分析や車両運動力学、制御工学、機械学習・データサイエンスを扱い、安全・快適で持続可能な交通社会の実現に向けて研究に取り組んでいます。",
     "activities": [
         {
             "date": "2021.04",
@@ -55,6 +55,32 @@
         {
             "skill": "WEBアプリ開発",
             "detail": "NEXT.jsを用いたフロントエンド開発を行います"
+        }
+    ],
+    "travelGalleryPaths": [
+        {
+            "text": "愛媛のしまなみ海道",
+            "path": "/img/ehime.png"
+        },
+        {
+            "text": "",
+            "path": "/img/dazaihu.png"
+        },
+        {
+            "text": "",
+            "path": "/img/gallery/car.jpg"
+        },
+        {
+            "text": "",
+            "path": "/img/gallery/enoshima.jpg"
+        },
+        {
+            "text": "",
+            "path": "/img/gallery/hana.jpg"
+        },
+        {
+            "text": "",
+            "path": "/img/gallery/baseball.jpg"
         }
     ],
     "skills-test": {

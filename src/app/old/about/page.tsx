@@ -1,13 +1,11 @@
 "use client";
-import profileData from '../../public/json/profile.json';
-import FadeIn from '../app/components/UI/FadeIn';
-import Carousel from './components/Carousel';
-import Header from "./components/base/Header";
-export default function Home() {
+import Link from 'next/link';
+import profileData from '../../../../public/json/profile.json';
+import FadeIn from '../../../app/components/UI/FadeIn';
+export default function Profile() {
   const { name, biography, activities, skills } = profileData;
   return (
     <div className='body'>
-      <Header></Header>
       <div className=" bg-gray-100 ">
         {/* <div className="max-w-6xl mx-auto p-8 bg-gray-100 rounded-lg shadow-md"> */}
         {/* Profile */}
@@ -51,18 +49,18 @@ export default function Home() {
         <div className="background-image"></div>
         <div className="max-w-6xl mx-auto p-8">
           {/* <div className="w-full text-left mb-4"> */}
-          <h2 className="md:gap-0 md:flex font-semibold pt-32 pb-12">
-            <div className='mb-10 md:mb-0 md: w-40 lg:w-80'>
+          <h2 className="flex font-semibold pt-32 pb-12">
+            <div className='w-80'>
               <FadeIn>
                 <span className='text-blue-500 text-2xl'>Skill</span>
               </FadeIn>
             </div>
-            <span className='text-3xl skill-h2-2'>データサイエンスの力で、安全・快適で持続可能な社会の実現に貢献します</span>
+            <span className='text-3xl skill-h2-2'>データサイエンスの力で社会に貢献します</span>
           </h2>
           <div className="flex flex-wrap justify-center">
-            <ul className="flex flex-col gap-10 md:ml-40 lg:ml-80">
+            <ul className="flex flex-col gap-10 ml-80">
               {skills.map((skill, index) => (
-                <li key={index} className="sm:w-full">
+                <li key={index}>
                   <dt className="pr-4 text-2xl text-blue-500 font-bold mb-3">{skill.skill}</dt>
                   <dd className="text-lg">{skill.detail}</dd>
                 </li>
@@ -72,22 +70,75 @@ export default function Home() {
         </div>
       </div>
 
-      {/* hobby */}
+      {/* Skill */}
       <div className="scroll-section-2">
         <div className="background-image"></div>
         <div className="max-w-6xl mx-auto p-8">
           <div className="w-full text-left mb-4">
             <h2 className="text-xl font-semibold p-4">
-              <span className='fadeUp'>hobby</span>
+              <span className='fadeUp'>Skill</span>
             </h2>
           </div>
           <div>
             <div className="flex flex-wrap justify-center">
-              <Carousel />
+              {/* Left Side */}
+              <div className="w-full sm:w-1/2 p-4">
+                <img src="/img/ehime.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
+              </div>
+
+              {/* Right Side */}
+              <div className="w-full sm:w-1/2 p-4">
+                <div className="text-left">
+                  {skills.python}
+                </div>
+                <ul className="flex flex-col gap-10">
+                  {skills.map((skill, index) => (
+                    <li key={index}>
+                      <dt className="pr-4 text-xl text-blue-500 font-bold mb-3">{skill.skill}</dt>
+                      <dd className="text-lg">{skill.detail}</dd>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="background-skill">
+          <div>
+            <div className="flex flex-wrap justify-center">
+              {/* Left Side */}
+              <div className="w-full sm:w-1/2 p-4">
+                <div className="text-left">
+                  {skills.english}
+                </div>
+                <Link href={"https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRavpo91x8eARGGuWro41Qv5gTdYq1eRJw"}>TOEIC820点：証明書</Link>
+              </div>
+
+              {/* Right Side */}
+              <div className="w-full sm:w-1/2 p-4">
+                <img src="/img/dazaihu.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex flex-wrap justify-center">
+            {/* Left Side */}
+            <div className="w-full sm:w-1/2 p-4">
+              <img src="/img/baystars25.jpg" alt="Profile" className="block w-50 h-50 rounded-lg" />
+            </div>
+
+            {/* Right Side */}
+            <div className="w-full sm:w-1/2 p-4">
+              <div className="text-left">
+                {skills.frontend}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div >
+    </div>
+
   );
-}
+};
