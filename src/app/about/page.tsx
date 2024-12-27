@@ -1,49 +1,12 @@
 "use client";
-import Link from 'next/link';
-import profileData from '../../../public/json/profile.json';
-import FadeIn from '../../app/components/UI/FadeIn';
-import Header from '../../app/components/base/Header';
-export default function Profile() {
-  const { name, biography, activities, skills } = profileData;
+import FadeInPlace from '../components/UI/FadeInPlace';
+import Header from "../components/base/Header";
+export default function Home() {
   return (
     <div className='body'>
       <Header></Header>
       <div className=" bg-gray-100 ">
-        {/* <div className="max-w-6xl mx-auto p-8 bg-gray-100 rounded-lg shadow-md"> */}
-        {/* Profile */}
-        <div className="max-w-6xl mx-auto p-8">
-          <div className="w-full text-left mb-4">
-            <h2 className="text-xl font-semibold p-4">Profile</h2>
-          </div>
-          <div className="flex flex-wrap justify-center">
-            {/* Left Side */}
-            <div className="w-full sm:w-1/2 p-4">
-              <div className="text-left mb-4">
-                <img src="/img/me.jpg" alt="Profile" className="block w-32 h-36 rounded-lg" />
-                {/* <img src="/img/me.jpg" alt="Profile" className="w-32 h-32 mx-auto rounded-full" /> */}
-              </div>
-              <div className="text-left mb-4">
-                <p className="text-sm mb-2">{name}</p>
-                {/* <h3 className="text-lg font-semibold mb-2">略歴:</h3> */}
-                <p className="text-xs">{biography}</p>
-              </div>
-            </div>
 
-            {/* Right Side */}
-            <div className="w-full sm:w-1/2 p-4">
-              <div className="text-left">
-                <dl className="space-y-2">
-                  {activities.map((activity, index) => (
-                    <div className="flex mb-1" key={index}>
-                      <dt className="w-1/7 pr-4 text-xs">{activity.date}</dt>
-                      <dd className="w-4/7 text-xs">{activity.activity}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Skill */}
@@ -51,96 +14,72 @@ export default function Profile() {
         <div className="background-image"></div>
         <div className="max-w-6xl mx-auto p-8">
           {/* <div className="w-full text-left mb-4"> */}
-          <h2 className="md:gap-0 md:flex font-semibold pt-32 pb-12">
-            <div className='mb-10 md:mb-0 md: w-40 lg:w-80'>
-              <FadeIn>
-                <span className='text-blue-500 text-2xl'>Skill</span>
-              </FadeIn>
+          <FadeInPlace>
+            <h2 className='h2-title'>学習技術</h2>
+          </FadeInPlace>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2021-</p>
             </div>
-            <span className='text-3xl skill-h2-2'>データサイエンスの力で、安全・快適で持続可能な社会の実現に貢献します</span>
-          </h2>
-          <div className="flex flex-wrap justify-center">
-            <ul className="flex flex-col gap-10 md:ml-40 lg:ml-80">
-              {skills.map((skill, index) => (
-                <li key={index} className="sm:w-full">
-                  <dt className="pr-4 text-2xl text-blue-500 font-bold mb-3">{skill.skill}</dt>
-                  <dd className="text-lg">{skill.detail}</dd>
-                </li>
-              ))}
-            </ul>
-          </div>
+            <div className="career-content">
+              <h3 className='career-title'>大学入学</h3>
+              <p className='career-content'>塾に通わずに自分で学習計画を立て、都内の国立大学に現役合格。工学部に所属し、４力学の基礎を学んだ。
+              </p>
+            </div>
+          </section>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2022-</p>
+            </div>
+            <div className="career-content">
+              <h3 className='career-title'>Python学習</h3>
+              <p className='career-content'>学科の実験で数万行のデータをエクセルで処理することに限界を感じ、Python学習を開始
+              </p>
+            </div>
+          </section>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2022-</p>
+            </div>
+            <div className="career-content">
+              <h3 className='career-title'>フロントエンド開発</h3>
+              <p className='career-content'>NEXT.jsも勉強し、JSXを採用して安全な開発を心がけました。このサイトもNEXT.jsで構築しており、ページ遷移のあるWebサイトの構築やCSSによるマークアップ技術の習得を経験しました。
+              </p>
+            </div>
+          </section>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2022-</p>
+            </div>
+            <div className="career-content">
+              <h3 className='career-title'>Webアプリケーション開発</h3>
+              <p className='career-content'>バックエンド開発から始まり、当初はStreamlitやDjangoなどの組み込みUIツールに頼っていました。しかし、フロントエンド開発、HTTP通信、非同期処理を学ぶことで、独自のAPIをフロントエンドに連携させ、フロントエンドからデータベース操作ができるアプリケーションを構築できるようになりました。これにより、Webアプリのアーキテクチャをしっかりと理解することができました。
+              </p>
+            </div>
+          </section>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2022-</p>
+            </div>
+            <div className="career-content">
+              <h3 className='career-title'>データ構造とアルゴリズム</h3>
+              <p className='career-content'>現在、より高度なプログラムを作成するための最適化手法とアルゴリズムを学んでいます。これらを大学で得たエンジニアリングの知識と組み合わせて、現実世界の問題を解決することを目指しています。また、大きな計算負荷を処理できる効率的なプログラムを作成するために、C++ も学習しています。
+              </p>
+            </div>
+          </section>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2022-</p>
+            </div>
+            <div className="career-content">
+              <h3 className='career-title'>工学知識</h3>
+              <p className='career-content'>大学では、目標を正確に制御できるPIDなどの制御システムについて学びました。これは、車両の速度維持や空調温度の調節など、社会的課題の解決に応用できます。
+              </p>
+            </div>
+          </section>
         </div>
+
       </div>
-
-      {/* Skill */}
-      <div className="scroll-section-2">
-        <div className="background-image"></div>
-        <div className="max-w-6xl mx-auto p-8">
-          <div className="w-full text-left mb-4">
-            <h2 className="text-xl font-semibold p-4">
-              <span className='fadeUp'>Skill</span>
-            </h2>
-          </div>
-          <div>
-            <div className="flex flex-wrap justify-center">
-              {/* Left Side */}
-              <div className="w-full sm:w-1/2 p-4">
-                <img src="/img/gallery/baseball.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
-              </div>
-
-              {/* Right Side */}
-              <div className="w-full sm:w-1/2 p-4">
-                <div className="text-left">
-                  {skills.python}
-                </div>
-                <ul className="flex flex-col gap-10">
-                  {skills.map((skill, index) => (
-                    <li key={index}>
-                      <dt className="pr-4 text-xl text-blue-500 font-bold mb-3">{skill.skill}</dt>
-                      <dd className="text-lg">{skill.detail}</dd>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="background-skill">
-          <div>
-            <div className="flex flex-wrap justify-center">
-              {/* Left Side */}
-              <div className="w-full sm:w-1/2 p-4">
-                <div className="text-left">
-                  {skills.english}
-                </div>
-                <Link href={"https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRavpo91x8eARGGuWro41Qv5gTdYq1eRJw"}>TOEIC820点：証明書</Link>
-              </div>
-
-              {/* Right Side */}
-              <div className="w-full sm:w-1/2 p-4">
-                <img src="/img/dazaihu.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="flex flex-wrap justify-center">
-            {/* Left Side */}
-            <div className="w-full sm:w-1/2 p-4">
-              <img src="/img/baystars25.jpg" alt="Profile" className="block w-50 h-50 rounded-lg" />
-            </div>
-
-            {/* Right Side */}
-            <div className="w-full sm:w-1/2 p-4">
-              <div className="text-left">
-                {skills.frontend}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </div >
   );
-};
+}

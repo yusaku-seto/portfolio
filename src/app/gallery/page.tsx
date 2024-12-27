@@ -19,7 +19,7 @@ export default function Profile() {
             {/* Left Side */}
             <div className="w-full sm:w-1/2 p-4">
               <div className="text-left mb-4">
-                <img src="/img/me.jpg" alt="Profile" className="block w-32 h-36 rounded-lg" />
+                <img src="/img/me.jpg" alt="Profile" className="block w-32 h-42 rounded-lg" />
                 {/* <img src="/img/me.jpg" alt="Profile" className="w-32 h-32 mx-auto rounded-full" /> */}
               </div>
               <div className="text-left mb-4">
@@ -61,7 +61,7 @@ export default function Profile() {
             <div className="flex flex-wrap justify-center">
               {/* Left Side */}
               <div className="w-full sm:w-1/2 p-4">
-                <img src="/img/ehime.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
+                <img src="/img/works/unity_star.png" alt="Profile" className="block w-50 h-50 rounded-lg" />
               </div>
 
               {/* Right Side */}
@@ -108,7 +108,7 @@ export default function Profile() {
 
               {/* Right Side */}
               <div className="w-full sm:w-1/2 p-4">
-                <Image src="/img/dazaihu.png" width={1280} height={852} alt="Profile" className="block w-50 h-50 rounded-lg" />
+                <Image src="/img/works/gourmet_app.png" width={1280} height={852} alt="Profile" className="block w-50 h-50 rounded-lg" />
               </div>
             </div>
           </div>

@@ -59,28 +59,12 @@
     ],
     "travelGalleryPaths": [
         {
-            "text": "愛媛のしまなみ海道",
-            "path": "/img/ehime.png"
+            "text": "Unity画面",
+            "path": "/img/works/unity_star.png"
         },
         {
-            "text": "",
-            "path": "/img/dazaihu.png"
-        },
-        {
-            "text": "",
-            "path": "/img/gallery/car.jpg"
-        },
-        {
-            "text": "",
-            "path": "/img/gallery/enoshima.jpg"
-        },
-        {
-            "text": "",
-            "path": "/img/gallery/hana.jpg"
-        },
-        {
-            "text": "",
-            "path": "/img/gallery/baseball.jpg"
+            "text": "プロジェクションマッピング",
+            "path": "/img/works/art.jpg"
         }
     ],
     "skills-test": {

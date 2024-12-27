@@ -337,3 +337,241 @@
     text-wrap: balance;
   } */
 /* } */
+
+/* profile */
+/* .header {
+  text-align: center;
+  padding: 50px;
+} */
+
+.profile {
+  width: 100%;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 1rem;
+}
+
+.catchphrase {
+  font-size: 3.0rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 70px;
+}
+
+.name-kanji {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.name-romaji {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1vh 0 7.5vh;
+}
+
+.profession {
+  font-size: 1.5rem;
+  color: #999;
+  float: right;
+}
+
+.history {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.career-date {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.career-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.career-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.career-content {
+  font-size: 1rem;
+  color: #444;
+}
+
+.career-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .career-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .career-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .career-content {
+    flex: 2;
+  }
+}
+
+.learning-section {
+  margin-top: 50px;
+}
+
+.learning-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.learning-content {
+  font-size: 1rem;
+  color: #444;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+/* Aboutページセクションのタイムライン */
+
+:root {
+  --width-space: 95vw;
+}
+
+.h2-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+
+.experience {
+  position: relative;
+  width: var(--width-space);
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+  position: relative;
+  gap: 10vw
+}
+
+.experience-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.experience-image {
+  /* flex: 1; */
+  grid-row: 1;
+  grid-column: 1;
+  padding: 10px;
+  width: 50vw;
+  overflow: hidden;
+  margin-left: -5vw;
+}
+
+.experience-item.reverse .experience-image {
+  margin-right: -5vw;
+}
+
+.experience-image img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+.experience-content {
+  flex: 1;
+  padding: 10px 20px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  /* position: relative; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.experience-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 逆順のタイムライン項目 */
+.experience-item.reverse::after {
+  left: 50%;
+}
+
+/* モバイルビューでの調整 */
+@media (max-width: 768px) {
+  .experience::before {
+    left: 20px;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-item.reverse {
+    flex-direction: column;
+  }
+
+  .experience-content {
+    padding: 10px 20px;
+    margin-left: 40px;
+  }
+
+  .experience-item::after {
+    left: 20px;
+    top: 10px;
+  }
+}

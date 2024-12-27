@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <a href="/" className="header_logo">ロゴ</a>
+            <a href="/" className="header_logo">瀬戸優作</a>
             <nav className={`${menuOpen ? 'menu_open' : ''}`}>
                 <div className="menu_toggle" onClick={toggleClick}>
                     <div className="toggle_line"></div>
@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
                 <ul className={`header_list ${menuOpen ? 'menu_open' : ''}`}>
                     <li className="header_item"><Link href="/about" className="header_item_link">About</Link></li>
-                    <li className="header_item"><Link href="/gallery" className="header_item_link">Gallery</Link></li>
+                    <li className="header_item"><Link href="/learning" className="header_item_link">Learning</Link></li>
                     <li className="header_item"><Link href="/contact" className="header_item_link">Contact</Link></li>
                 </ul>
             </nav>
