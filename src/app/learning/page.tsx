@@ -1,5 +1,4 @@
 "use client";
-import Link from 'next/link';
 import Header from '../components/base/Header';
 import FadeIn from '../components/UI/FadeIn';
 import FadeInPlace from '../components/UI/FadeInPlace';
@@ -15,7 +14,7 @@ export default function Profile() {
           <div className="experience-item">
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/data_analysis.JPG" alt="大学での学び" />
+                <img src="./img/works/art.JPG" alt="大学での学び" />
               </FadeInPlace>
             </div>
             <div className="experience-content">
@@ -54,7 +53,7 @@ export default function Profile() {
           <div className="experience-item reverse">
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/gourmet_app.png" alt="趣味" />
+                <img src="./img/works/gourmet_app.png" alt="趣味" />
               </FadeInPlace>
             </div>
             <div className="experience-content">
@@ -64,7 +63,7 @@ export default function Profile() {
               </FadeIn>
             </div>
           </div>
-          <div className="experience-item">
+          {/* <div className="experience-item">
             <div className="experience-image">
               <FadeInPlace>
                 <img src="./img/data_analysis.JPG" alt="機械学習ゼミ" />
@@ -76,8 +75,8 @@ export default function Profile() {
                 <p>現在、より高度なプログラムを作成するための最適化手法とアルゴリズムを学んでいます。これらを大学で得たエンジニアリングの知識と組み合わせて、現実世界の問題を解決することを目指しています。また、大きな計算負荷を処理できる効率的なプログラムを作成するために、C</p>
               </FadeIn>
             </div>
-          </div>
-          <div className="experience-item reverse">
+          </div> */}
+          {/* <div className="experience-item reverse">
             <div className="experience-image">
               <FadeInPlace>
                 <img src="./img/data_analysis.JPG" alt="趣味" />
@@ -89,17 +88,9 @@ export default function Profile() {
                 <p>大学では、目標を正確に制御できるPIDなどの制御システムについて学びました。これは、車両の速度維持や空調温度の調節など、社会的課題の解決に応用できます。</p>
               </FadeIn>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
-
-
-      {/* Skill */}
-      <div className="scroll-section">
-
-
-        <Link href={"https://iibc.cloudcerts.jp/viewer/cert/5aJemlWBgNAqgu68NgOA5VmIbVAVQ8JRavpo91x8eARGGuWro41Qv5gTdYq1eRJw"}>TOEIC820点：証明書</Link>
-      </div>
     </div>
 
   );

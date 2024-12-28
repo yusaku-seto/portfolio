@@ -17,7 +17,8 @@
 }
 
 .body {
-  font-family: sans-serif, Arial, Helvetica;
+  /* font-family: sans-serif, Arial, Helvetica; */
+  font-family: 'ヒラギノ明朝 ProN', 'Hiragino Mincho Pro', 'Yu Mincho', 'MS P明朝', serif;
 }
 
 /* header */
@@ -34,8 +35,11 @@
 }
 
 .header_logo {
-  color: blue;
+  color: #333;
   min-width: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header_list {

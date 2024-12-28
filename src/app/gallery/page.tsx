@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import profileData from '../../../public/json/profile.json';
-import Header from '../../app/components/base/Header';
+import Header from '../components/base/Header';
 export default function Profile() {
   const { name, biography, activities, skills, travelGalleryPaths } = profileData;
   return (

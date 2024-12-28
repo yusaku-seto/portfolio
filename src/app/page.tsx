@@ -45,7 +45,7 @@ export default function Home() {
           <section className='experience-item'>
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/Machine_Learning.JPeG" alt="image" />
+                <img src="./img/works/AI_model.png" alt="image" />
               </FadeInPlace>
             </div>
             <div className="experience-content">
@@ -59,7 +59,7 @@ export default function Home() {
           <section className='experience-item reverse'>
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/data_analysis.JPG" alt="image" />
+                <img src="./img/works/data_analysis.png" alt="image" />
               </FadeInPlace>
             </div>
             <div className="experience-content">
@@ -73,7 +73,7 @@ export default function Home() {
           <section className='experience-item'>
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/web_app.JPG" alt="image" />
+                <img src="./img/works/lab_streamlit.png" alt="image" />
               </FadeInPlace>
             </div>
             <div className="experience-content">
@@ -87,7 +87,7 @@ export default function Home() {
           <section className='experience-item reverse'>
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/python.JPG" alt="image" />
+                <img src="./img/works/python_object_oriented.png" alt="python object oriented" />
               </FadeInPlace>
             </div>
             <div className="experience-content">
@@ -101,7 +101,7 @@ export default function Home() {
           <section className='experience-item'>
             <div className="experience-image">
               <FadeInPlace>
-                <img src="./img/web_app.JPG" alt="image" />
+                <img src="./img/works/unity_star.png" alt="image" />
               </FadeInPlace>
             </div>
             <div className="experience-content">

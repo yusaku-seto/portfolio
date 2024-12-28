@@ -9,7 +9,9 @@ const Header = () => {
 
     return (
         <header className="header">
-            <a href="/" className="header_logo">瀬戸優作</a>
+            <a href="/" className="header_logo">
+                <img src="./img/icon.png" alt="icon" width={36} height={36} />Seto Yusaku
+            </a>
             <nav className={`${menuOpen ? 'menu_open' : ''}`}>
                 <div className="menu_toggle" onClick={toggleClick}>
                     <div className="toggle_line"></div>
