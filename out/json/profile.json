@@ -1,0 +1,75 @@
+{
+    "name": "瀬戸優作|Seto Yusaku",
+    "biography": "2002.08.08生まれ、東京都立川市出身。東京農工大学スマートモビリティ研究拠点・ポンサトーン研究室所属。国際的研究拠点に身を置き、ヒヤリハットデータベース構築と分析や車両運動力学、制御工学、機械学習・データサイエンスを扱い、安全・快適で持続可能な交通社会の実現に向けて研究に取り組んでいます。",
+    "activities": [
+        {
+            "date": "2021.04",
+            "activity": "東京農工大学工学部 入学"
+        },
+        {
+            "date": "2023.04",
+            "activity": "Python機械学習の学習開始"
+        },
+        {
+            "date": "2023.06",
+            "activity": "GCI2023機械学習コンペで上位入賞"
+        },
+        {
+            "date": "2023.08-",
+            "activity": "株式会社 メンテル"
+        },
+        {
+            "date": "2023.08-",
+            "activity": "商業施設の電力使用量の可視化・分析"
+        },
+        {
+            "date": "2023.08-",
+            "activity": "執務者の行動パターン分析・クラスタリング"
+        },
+        {
+            "date": "2023.08-",
+            "activity": "電力需給VPPシミュレータ開発"
+        },
+        {
+            "date": "2024.03",
+            "activity": "TOEIC Listening & Reading Test 820点取得"
+        },
+        {
+            "date": "2025.03",
+            "activity": "東京農工大学工学部 卒業"
+        }
+    ],
+    "skills": [
+        {
+            "skill": "データ分析",
+            "detail": "pythonを用いてデータ分析可視化"
+        },
+        {
+            "skill": "機械学習",
+            "detail": "教師あり機械学習やクラスタリングを行います。"
+        },
+        {
+            "skill": "DB処理＆API",
+            "detail": "リレーショナルDBを用いて大規模データを扱います。Djangoを使用してpython処理を含むAPiのエンドポイントを構築します。"
+        },
+        {
+            "skill": "WEBアプリ開発",
+            "detail": "NEXT.jsを用いたフロントエンド開発を行います"
+        }
+    ],
+    "travelGalleryPaths": [
+        {
+            "text": "Unity画面",
+            "path": "/img/works/unity_star.png"
+        },
+        {
+            "text": "プロジェクションマッピング",
+            "path": "/img/works/art.jpg"
+        }
+    ],
+    "skills-test": {
+        "python": "python書けまーーす",
+        "english": "TOEIC Listening & Reading Test 820点取りましたーーーー！！",
+        "frontend": "NEXT.js REACTもかじってるよ😀"
+    }
+}
