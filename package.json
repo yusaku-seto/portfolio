@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "next": "14.1.4",
+    "punycode.js": "^2.3.1",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.8.2"
