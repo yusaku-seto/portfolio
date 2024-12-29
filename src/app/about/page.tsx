@@ -1,7 +1,7 @@
 "use client";
 import FadeInPlace from '../components/UI/FadeInPlace';
 import Header from "../components/base/Header";
-export default function Home() {
+export default function About() {
   return (
     <div className='body'>
       <Header></Header>
@@ -110,7 +110,7 @@ export default function Home() {
               </p>
             </div>
           </section>
-          <section className='career-section'>
+          {/* <section className='career-section'>
             <div className="career-image">
               <p className='career-date'>2024-</p>
             </div>
@@ -119,7 +119,7 @@ export default function Home() {
               <p className='career-content'>現在、より高度なプログラムを作成するための最適化手法とアルゴリズムを学んでいます。これらを大学で得たエンジニアリングの知識と組み合わせて、現実世界の問題を解決することを目指しています。また、大きな計算負荷を処理できる効率的なプログラムを作成するために、C++ も学習しています。
               </p>
             </div>
-          </section>
+          </section> */}
           <section className='career-section'>
             <div className="career-image">
               <p className='career-date'>2024-</p>

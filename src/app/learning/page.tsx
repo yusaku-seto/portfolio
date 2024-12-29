@@ -2,7 +2,7 @@
 import Header from '../components/base/Header';
 import FadeIn from '../components/UI/FadeIn';
 import FadeInPlace from '../components/UI/FadeInPlace';
-export default function Profile() {
+export default function Learning() {
   return (
     <div className='body'>
       <Header></Header>
@@ -22,6 +22,8 @@ export default function Profile() {
                 <h3>XR技術</h3>
                 <p>Unity を学び、シンプルなゲームや学祭で展示する体験型アートを開発しました。体験型アートでは、4次元ベクトルの回転や透視投影などの数学的知識を活用し、多くの人が楽しめるコンテンツを制作しました。また、自動車の研究では、現実では再現が難しい危険な状況をシミュレーションで再現することがあります。XRとエンジニアリングを組み合わせることで、現実世界での実験に代わる安全な研究環境の構築に応用できると考えています。
                 </p>
+                <br />
+                <a href="https://qiita.com/st_yus9/items/38c3db2f709431f10d23">記事を書きました</a>
               </FadeIn>
             </div>
           </div>

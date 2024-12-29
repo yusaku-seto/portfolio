@@ -57,7 +57,7 @@ export default function Home() {
             <div className="experience-content">
               <FadeIn>
                 <h3 className='experience-title'>機械学習</h3>
-                <p className='experience-content'>電力需給最適化サービスの電力需給予測モデルの開発を担当。気象データから家庭や事業所の電力需要や、太陽光・風力などの再生可能エネルギー発電量を予測するモデルを構築しました。また、研究ではクラスタリングや2値分類を活用し、統計的に有意な分析を行うことで、データの本質的な特徴抽出に役立てました。
+                <p className='experience-content'>電力需給最適化サービスの開発において、電力需給予測モデルの構築を担当しました。気象データを基に、家庭や事業所の電力需要や再生可能エネルギー（太陽光・風力）の発電量を予測するモデルを開発。また、研究ではクラスタリングや2値分類を活用し、統計的に有意な分析を行い、データの特徴を抽出することで新たな知見を得ることができました。
                 </p>
               </FadeIn>
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="experience-content">
               <FadeIn>
                 <h3 className='experience-title'>データ分析</h3>
-                <p className='experience-content'>日本最大手の建設会社が提供するアプリ内で、執務者の位置情報や生体情報を分析し、集中度向上を目的としたレコメンド機能を開発しました。大量データをPythonを用いて分析し、電力使用状況の可視化や研究データの統計解析を実施。得られた知見を基に、省エネ化や新たな発見に活かしました。
+                <p className='experience-content'>大手建設会社が提供するアプリ内で、執務者の位置情報や生体情報を分析し、集中度向上を目指したレコメンド機能を開発しました。また、大量データをPythonで効率的に分析し、電力使用状況の可視化や研究データの統計解析を実施。これらの結果を基に、省エネルギー化や新たな発見をサポートしました。
                 </p>
               </FadeIn>
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="experience-content">
               <FadeIn>
                 <h3 className='experience-title'>簡易WEBアプリ化</h3>
-                <p className='experience-content'>Pythonで構築した処理やデータ分析結果のグラフをWEBアプリに組み込み、誰でも直感的にデータを可視化できる環境を提供しました。研究の実験時にもその場で素早く処理の実行やデータの比較ができるようになり、正しく実験が行えているかどうかその場で判断できるようにしました。
+                <p className='experience-content'>Pythonで構築した処理や分析結果をWebアプリに統合し、誰でも直感的にデータを可視化できる環境を提供しました。研究の実験時にもそリアルタイムでデータ処理や比較ができる環境を構築。異常なデータにも迅速に対応できるようになり、研究の効率化にも役立てました。
                 </p>
               </FadeIn>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="experience-content">
               <FadeIn>
                 <h3 className='experience-title'>Pythonによる高品質な開発</h3>
-                <p className='experience-content'>関数化やオブジェクト指向設計を導入し、可読性や拡張性を向上を意識しました。安全性と再利用性を高め、効率的な開発を実現しました。
+                <p className='experience-content'>関数化やオブジェクト指向設計を導入し、可読性や拡張性を向上を意識しました。安全性と再利用性を高め、効率的かつ保守性の高い開発を実現しました。
                 </p>
               </FadeIn>
             </div>
@@ -114,7 +114,7 @@ export default function Home() {
               <FadeIn>
                 <a href="/learning">
                   <h3 className='experience-title'>その他の技術</h3>
-                  <p className='experience-content'>フロントエンド開発（Next.js）、バックエンド開発（Django REST Framework）、Unityを用いたXRコンテンツ制作など、多岐にわたる技術を独学で習得しました。新たな分野にも積極的に挑戦しています。
+                  <p className='experience-content'>フロントエンド開発（Next.js）、バックエンド開発（Django REST Framework）、Unityを用いた体験型コンテンツ制作など、多岐にわたる技術を独学で習得しました。新たな分野にも積極的に挑戦しています。
                   </p>
                 </a>
               </FadeIn>
