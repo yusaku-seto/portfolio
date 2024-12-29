@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import FadeInPlace from '../components/UI/FadeInPlace';
 import Header from "../components/base/Header";
 export default function About() {
@@ -33,7 +34,8 @@ export default function About() {
                 <p className='vision-content'>個人の成果だけでなく、チーム全体での成功を目指しています。自分の役割が他のメンバーに与える影響を意識しながら行動することを大切にしています。特に、自分の作業が他のメンバーの動きに直結する場合には、優先して取り組むことでチーム全体の効率を高めるよう努めてきました。
                 </p>
               </div>
-              <a href="/values">詳しくはこちら</a>
+              <Link href="/values">詳しくはこちら</Link>
+              <a href="/"></a>
             </section>
             {/* <div className="w-full text-left mb-4"> */}
             <FadeInPlace>
