@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import profileData from '../../public/json/profile.json';
 import FadeIn from './components/UI/FadeIn';
 import FadeInPlace from './components/UI/FadeInPlace';
@@ -112,11 +113,11 @@ export default function Home() {
             </div>
             <div className="experience-content">
               <FadeIn>
-                <a href="/learning">
+                <Link href="/learning">
                   <h3 className='experience-title'>その他の技術</h3>
                   <p className='experience-content'>フロントエンド開発（Next.js）、バックエンド開発（Django REST Framework）、Unityを用いた体験型コンテンツ制作など、多岐にわたる技術を独学で習得しました。新たな分野にも積極的に挑戦しています。
                   </p>
-                </a>
+                </Link>
               </FadeIn>
             </div>
           </section>
