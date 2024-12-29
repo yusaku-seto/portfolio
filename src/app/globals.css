@@ -360,6 +360,13 @@
   font-weight: bold;
   text-align: center;
   color: #333;
+  margin-bottom: 20px;
+}
+
+.catchphrase-sub {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
   margin-bottom: 70px;
 }
 
@@ -385,6 +392,22 @@
   margin-top: 20px;
   font-size: 1rem;
   color: #444;
+}
+
+.vision-section {
+  margin-bottom: 40px;
+}
+
+.vision-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vision-content {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 40px;
 }
 
 .career-date {
