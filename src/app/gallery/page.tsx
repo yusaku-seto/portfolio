@@ -67,7 +67,7 @@ export default function Profile() {
               {/* Right Side */}
               <div className="w-full sm:w-1/2 p-4">
                 <div className="text-left">
-                  {skills.python}
+                  {/* {skills.python} */}
                 </div>
                 <ul className="flex flex-col gap-10">
                   {skills.map((skill, index) => (
