@@ -1,5 +1,4 @@
 "use client";
-import Link from 'next/link';
 import Header from "../components/base/Header";
 export default function Contact() {
   return (
@@ -16,9 +15,14 @@ export default function Contact() {
           <section>
             <section className='vision-section'>
               <h2 className='h2-title'>Contact</h2>
-              <Link href="https://www.linkedin.com/in/yusaku-seto/">
-                LinkedInプロフィールはこちら
-              </Link>
+              <a href="mailto:seto.yusaku.2027@gmail.com">
+                メールからお気軽にお問い合わせください
+              </a>
+              <p>
+                <a href="mailto:seto.yusaku.2027@gmail.com">
+                  seto.yusaku.2027@gmail.com
+                </a>
+              </p>
             </section>
           </section>
         </div>

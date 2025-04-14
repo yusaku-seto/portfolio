@@ -16,26 +16,31 @@ export default function About() {
         <div className="max-w-6xl mx-auto p-8">
           <section>
             <section className='vision-section'>
-              <FadeInPlace>
-                <h2 className='h2-title'>大切にしていること</h2>
-              </FadeInPlace>
-              <div className="vision-content">
-                <h3 className='vision-title'>知識や経験を社会に還元すること</h3>
-                <p className='vision-content'>私は、工学やAIの知識や経験を活用して社会に貢献することを目指しています。これまで、省エネのサポートや誰もが楽しめるコンテンツの提供など、多岐にわたる分野で技術を活用してきました。データ分析でクライアントから高評価を得たり、体験型展示作品で楽しんでいただける様子を見て、やりがいを感じています。
-                </p>
+              <div className="profile">
+
+                <p className='catchphrase'>計画性　向上心　やり切る力</p>
+                <p className='catchphrase-sub'>未経験の領域にも臆せず挑戦。計画性を持って粘り強く取り組み、最後までやり切ります。</p>
+                <FadeInPlace>
+                  <h2 className='h2-title'>大切にしていること</h2>
+                </FadeInPlace>
+                <div className="vision-content">
+                  <h3 className='vision-title'>知識や経験を社会に還元すること</h3>
+                  <p className='vision-content'>私は、工学やAIの知識や経験を活用して社会に貢献することを目指しています。これまで、省エネのサポートや誰もが楽しめるコンテンツの提供など、多岐にわたる分野で技術を活用してきました。データ分析でクライアントから高評価を得たり、体験型展示作品で楽しんでいただける様子を見て、やりがいを感じています。
+                  </p>
+                </div>
+                <div className="vision-content">
+                  <h3 className='vision-title'>限られたリソースの中で優先順位を考え、計画的に行動すること</h3>
+                  <p className='vision-content'>時間やリソースが限られる中で、冷静に状況を判断し、効率的な計画を立てることで成果を最大化することを意識しています。学業やインターン、複数のプロジェクトを同時進行させながら、優先度を明確にして計画的に活動してきました。
+                  </p>
+                </div>
+                <div className="vision-content">
+                  <h3 className='vision-title'>チーム全体がスムーズに動けるように配慮し、協力して成果を出すこと</h3>
+                  <p className='vision-content'>個人の成果だけでなく、チーム全体での成功を目指しています。自分の役割が他のメンバーに与える影響を意識しながら行動することを大切にしています。特に、自分の作業が他のメンバーの動きに直結する場合には、優先して取り組むことでチーム全体の効率を高めるよう努めてきました。
+                  </p>
+                </div>
+                <Link href="/values">詳しくはこちら</Link>
+                <a href="/"></a>
               </div>
-              <div className="vision-content">
-                <h3 className='vision-title'>限られたリソースの中で優先順位を考え、計画的に行動すること</h3>
-                <p className='vision-content'>時間やリソースが限られる中で、冷静に状況を判断し、効率的な計画を立てることで成果を最大化することを意識しています。学業やインターン、複数のプロジェクトを同時進行させながら、優先度を明確にして計画的に活動してきました。
-                </p>
-              </div>
-              <div className="vision-content">
-                <h3 className='vision-title'>チーム全体がスムーズに動けるように配慮し、協力して成果を出すこと</h3>
-                <p className='vision-content'>個人の成果だけでなく、チーム全体での成功を目指しています。自分の役割が他のメンバーに与える影響を意識しながら行動することを大切にしています。特に、自分の作業が他のメンバーの動きに直結する場合には、優先して取り組むことでチーム全体の効率を高めるよう努めてきました。
-                </p>
-              </div>
-              <Link href="/values">詳しくはこちら</Link>
-              <a href="/"></a>
             </section>
             {/* <div className="w-full text-left mb-4"> */}
             <FadeInPlace>
@@ -128,7 +133,17 @@ export default function About() {
             </div>
             <div className="career-content">
               <h3 className='career-title'>工学知識</h3>
-              <p className='career-content'>大学では、研究活動を通して実際に役に立つ工学の知識を深めています。例えば、PIDなどの制御システムは車両の速度維持や空調温度の調節など、身の回りの制御に活かされています。
+              <p className='career-content'>大学では、研究活動を通して実際に役に立つ工学の知識を深めています。例えば、フィードフォワード、フィードバック、PIDなどの制御システムは車両の速度維持や空調温度の調節など、身の回りの制御に活かされています。
+              </p>
+            </div>
+          </section>
+          <section className='career-section'>
+            <div className="career-image">
+              <p className='career-date'>2025-</p>
+            </div>
+            <div className="career-content">
+              <h3 className='career-title'>大学卒業</h3>
+              <p className='career-content'>東京農工大学を卒業。学科で成績優秀賞を受賞しました。
               </p>
             </div>
           </section>
